@@ -1,222 +1,263 @@
-
 *{
+
 	margin: 0;
 	padding: 0;
+	
 }
 
-.container{
-	width: 100%;
-	background-color: rgba(0, 40, 104,1.0);
-	color: white;
+body{
+	
+	background-color: #f7f7f7;
 
 }
- /*header styling */
+
 header{
-	background-image: url('../imgs/portada-top.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
 	width: 100%;
-	height: 400px;
+	display: flex;
 
-	position: relative;
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
+
+.logo-wrapper{
+	width: 60%;
+}
+
+
+.logo{
+	width: 100px;
+	height:  100px;
+	margin-left: 10%;
+}
+
 
 nav{
+	width: 40%;
+	padding-top: 2.5%;
+	padding-left: 1%;
+
+}
+
+
+
+
+.nav-links{
+	display: inline-block;
+
+	text-decoration: none;
+	color: black;
+	font-size: 1.5em;
+
+	text-transform: uppercase;
+
+}
+.nav-links:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+}
+
+
+.nav-links:nth-child(2){
+	margin: 0 4%;
+
+}
+
+.current-page{
+	border-bottom: 2px solid black;
+
+}
+
+
+
+
+
+/*CAROUSEL*/
+.carousel{
+	position: relative;
+	z-index: -1;
+}
+
+.carousel-item{
+
+	width: 100%;
+	background-color: gray;
+	
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	color: #ffffff;
+	display: none;
+}
+
+.carousel-item1{
+
+	width: 50%;
+	margin:  0 25%;
+	height: 400px;
+	background-image: url('../imgs/image1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.carousel-item2{
+
+	width: 50%;
+	margin:  0 25%;
+	height: 400px;
+	background-image: url('../imgs/image2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.carousel-item3{
+
+	width: 50%;
+	margin:  0 25%;
+	height: 400px;
+	background-image: url('../imgs/image3.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.carousel-item-selected{
+		display: block;
+}
+
+.carousel-nav{
+
+	width: 100%;
+	padding: 20px 0;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 50%;
-	margin: 0 25%;
 	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
 
-	background-color: #317d73;
-	border-radius: 8px;
 }
 
-nav a{
+.carousel-button{
+
+	width: 10px;
+	height: 10px;
 	display: inline-block;
-	color: white;
-	padding: 2%;
+	background-color: rgba(250,250,250, 0.4);
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
 	
+}
+
+.carousel-button-selected{
+
+	background-color: rgba(250,250,250, 0.7);
+
+}
+
+
+/*ARTICLE STYLING*/
+article{
+
+	padding: 5% 0;
+	background-color: white;
+	display: flex;
+}
+.casa-wrapper{
+	width: 50%;
+	background-color: white;
+}
+.casa-image{
+	width: 400px;
+	height: 400px;
+
+	margin-left: 30%;
+	border-radius: 8px;
+	padding-top: 1%;
+	/*box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.contact-wrapper{
+	width: 50%;
+	background-color: white;
+}
+
+
+article h1{
+	font-size: 2em;
+	margin: 4% 0;
+	width: 92%;
+	text-transform: uppercase;
+	border-bottom: 2px solid black;
+}
+
+article h3{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.6);
+	margin-left: 10%;
+	margin-bottom: 3%;
+	width: 70%;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+.contact-link{
+	display: block;
+	text-decoration: none;
+	font-size: 2em;
+	color: black;
+	
+	margin-bottom: 2%;
+	margin-left: 20%;
+
+	padding: 2%;
+	background-color: red;
+	width: 30%;
+	color:  white;
 	border-radius: 8px;
 
-	text-decoration: none;
-
+	transition: box-shadow 0.5s, background-color 0.5s;
 }
 
-nav a:hover{
-	text-decoration: underline solid orange;
-	color: orange;
+.contact-link:hover{
+	background-color: green;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*main styling */
-main{
-	width: 100%;
-
-
-}
-
-
-/*showcase & slogan-call-now-wrapper styling */
 .showcase{
 	width: 100%;
-	background-image: url('../imgs/audi-car.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 300px;
+	margin:  0;
+	padding: 0;
 }
 
-
-.slogan-call-now-wrapper{
-	width: 50%;
-	margin: 0 0 0 50%;
-	
-}
-
-.slogan-call-now-wrapper h1{
-	padding: 25% 0 1% 0;
-	font-size: 2em;
-	text-transform: uppercase;
-}
-
-.slogan-call-now-wrapper h3{
-	font-size: 1.4em;
-	text-transform: uppercase;
-
-}
-
-.slogan-call-now-wrapper a{
-	display: block;
-	width: 25%;
-	font-size: 1.2em;
-	border-radius: 8px;
-	text-align: center;
-	background-color: rgba(0, 40, 104,1.0);
-	text-decoration: none;
-	color: white;
-	padding: 2% 4%;
-	margin: 2% 0 2% 25%;
-	text-transform: uppercase;
-
-	transition: box-shadow 1s, background-color 1s, color 1s;
-}
-
-.slogan-call-now-wrapper a:hover{
-	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: rgba(0, 60, 124, 1.0);
-	color: orange;
-}
-
-
-.showcase-2{
-	width: 100%;
-	background-image: url('../imgs/highway-2.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 300px;
-}
-
-.showcase-3{
-	width: 100%;
-	background-image: url('../imgs/duermen-2.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 300px;
-}
-
-.portada{
-	width: 100%;
-	height: 800px;
-	/*background-image: url('../imgs/portada.jpg');*/
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-
-
-	display: relative;
-}
-
-.button-wrapper{
-
-	position: fixed;
-	bottom: 0;
-
-	width: 60%;
-	margin: 0 20%;
-	padding: 0.5% 0;
-
-
-    
-
-   text-align: center;
-
-
-}
-
-.portada-links{
-	display: inline-block;
-
-	text-decoration: none;
-	color: rgba(150, 150, 150, 1.0);
-	padding: 2%;
-	border-radius: 8px;
-	font-size: 1.4em;
-
-	background-color: rgba(50, 50, 50, 0.7);
-   	backdrop-filter: blur(12px);
-   	-webkit-backdrop-filter: blur(12px);
-
-
-
-}
-
-.portada-links:hover{
-	color: white;
-	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: rgba(100, 100, 100, 0.7);
-	border-radius: 8px;
-}
-
-.phone2{
+.portada-image{
+	width: 90%;
 	margin: 0 5%;
-}
-
-.send-message{
-	text-transform: uppercase;
-}
-
-
-.closecase{
-	width: 100%;
-	background-image: url('../imgs/portada-bottom.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 300px;
+	padding: 0;
+	border: none;
 }
 
 footer{
 	width: 100%;
-	padding: 2% 0;
-
+	margin: 0;
+	padding: 1% 0;
+	background-color: #002769;
 }
 
-.madeby{
-	margin: 0 0 0 70% ;
-	width: 30%;
-
+footer p{
 	color: rgba(150, 150, 150, 1.0);
+	font-size: 1.1em;
+	width: 30%;
+	margin: 0 0 0 70%;
 	text-transform: uppercase;
-
 }
 
-.fdzwebsllc{
-	color: rgba(200, 200, 200, 1.0);
+
+footer p a{
 	text-decoration: none;
+	color: white;
 
 }
 
-.fdzwebsllc:hover{
-	color: orange;
+footer p a:hover{
 	text-decoration: underline solid orange;
+	color: orange;
+
+
 }
