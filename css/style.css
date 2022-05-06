@@ -326,7 +326,7 @@ footer p a:hover{
 		color: black;
 		font-size: 1em;
 		text-transform: uppercase;
-		
+
 	
 	}
 	.nav-links:hover{
@@ -439,6 +439,8 @@ footer p a:hover{
 		background-color: white;
 		display: flex;
 		flex-direction: column;
+
+		width: 100%;
 	}
 	.casa-wrapper{
 		width: 100%;
