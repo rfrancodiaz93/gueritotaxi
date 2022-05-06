@@ -307,7 +307,7 @@ footer p a:hover{
 		bottom:0;
 		left:0;
 
-		padding: 3% 10%;
+		padding: 3% 5%;
 
 		background-color: white;
 		
@@ -325,7 +325,7 @@ footer p a:hover{
 		color: black;
 		font-size: 1em;
 		text-transform: uppercase;
-
+		text-align: center;
 	
 	}
 	.nav-links:hover{
@@ -335,7 +335,7 @@ footer p a:hover{
 	
 	
 	.nav-links:nth-child(2){
-		margin: 0 10%;
+		margin: 0 15%;
 	
 	}
 	
