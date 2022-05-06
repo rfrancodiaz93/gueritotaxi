@@ -491,9 +491,8 @@ footer p a:hover{
 		color: black;
 
 		margin: 0 25%;
-		margin-bottom: 2%;
 	
-		padding: 2%;
+		padding: 2% 0;
 		background-color: red;
 		width: 50%;
 		color:  white;
@@ -532,8 +531,9 @@ footer p a:hover{
 	footer p{
 		color: rgba(150, 150, 150, 1.0);
 		font-size: 1.1em;
-		width: 30%;
-		margin: 0 0 0 70%;
+		width: 40%;
+		margin: 0 0 0 60%;
+		padding-bottom: 4%;
 		text-transform: uppercase;
 	}
 	
